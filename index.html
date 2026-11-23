@@ -6,89 +6,100 @@
     <meta name="keywords" content="anastasia, cv, resume" />
     <meta name="description" content="Это сайт резюме Анастасии Сапаевой" />
     <title>Resume Anastasia</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img src="imgs/image-28-05-24-02-26.jpg" alt="no img" width="150" />
-    <h1>Sapaeva Anastasiia</h1>
-    <p>I'm a <strong>UX/UI Designer</strong></p>
-    <p>I like playing piano, reading books, travelling</p>
+    <div class="container">
+      <div class="info">
+        <img class="avatar" src="imgs/image-28-05-24-02-26.jpg" alt="no img" />
+          <div class="info-text">
+            <h1 class="color-1">Sapaeva Anastasiia</h1>
+            <p>I'm a <strong>UX/UI Designer</strong></p>
+            <p>I like playing piano, reading books, travelling</p>
 
-    <h4>Socialmedia</h4>
-    <p>
-      <a href="http://" target="_blank">Instagram</a>
-      |
-      <a href="http://" target="_blank">Telegram</a>
-      |
-      <a href="http://" target="_blank">YouTube</a>
-    </p>
-
-    <h2>My hobbies</h2>
-    <ol>
-      <li>Traveling</li>
-      <li>Reading books</li>
-      <li>Playing piono</li>
-      <li>Walking</li>
-    </ol>
-
-    <h2>Expirience</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>Role</th>
-          <th>Period</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Xometry</td>
-          <td>UX Designer</td>
-          <td>2022 - Now</td>
-        </tr>
-        <tr>
-          <td>Soft-Artel</td>
-          <td>UX Designer</td>
-          <td>2020 - 2022</td>
-        </tr>
-
-        <tr>
-          <td>Meta-Studion</td>
-          <td>Project Manager</td>
-          <td>2018-2020</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Connect with me</h2>
-    <form action="/">
-      <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name" />
+            <h3>Socialmedia</h3>
+            <p>
+              <a href="http://" target="_blank">Instagram</a>
+              |
+              <a href="http://" target="_blank">Telegram</a>
+              |
+              <a href="http://" target="_blank">YouTube</a>
+            </p>
+          </div>
+        </div>
       </div>
 
-      <br />
-
-      <div>
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Email" />
+      <div class="card bg-green">
+        <h2>My hobbies</h2>
+        <ol class="list">
+          <li>Traveling</li>
+          <li>Reading books</li>
+          <li>Playing piono</li>
+          <li>Walking</li>
+        </ol>
       </div>
 
-      <br />
+      <div class="card bg-red">
+        <h2>Expirience</h2>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Company</th>
+              <th>Role</th>
+              <th>Period</th>
+            </tr>
+          </thead>
+          <tbody> -->
+            <tr>
+              <td>Xometry</td>
+              <td>UX Designer</td>
+              <td>2022 - Now</td>
+            </tr>
+            <tr>
+              <td>Soft-Artel</td>
+              <td>UX Designer</td>
+              <td>2020 - 2022</td>
+            </tr>
 
-      <div>
-        <label for="message">Message</label>
-        <br />
-        <textarea
-          id="message"
-          placeholder="Write a mesage..."
-        ></textarea>
+            <tr>
+              <td>Meta-Studion</td>
+              <td>Project Manager</td>
+              <td>2018-2020</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <br />
+      <div class="card bg-yellow">
+       
+        <form action="/" class="form">
+          <h2>Connect with me</h2>
 
-      <button>Submit</button>
-    </form>
+          <div class="form-row">
 
-    <p></p>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Email" />
+            </div>
+
+          </div>
+
+      
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write a mesage..."></textarea>
+          </div>
+
+
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
